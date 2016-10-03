@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>COOKIE CLICKER</title>
+         <meta charset="utf-8">
+      <script>
+            var i=1;
+
+      function f2()
+      {
+         var a = document.getElementById("cookie").innerHTML=i++;
+      }
+
+      function f4()
+      {
+         var a=document.getElementById("cookie").innerHTML=i-=50;
+      }
+
+      function a()
+      {
+      setInterval(
+         function time()
+         {
+            var a = document.getElementById("cookie").innerHTML=i++;
+         }
+         ,5000
+         )
+      }
+
+      function f3()
+      {
+         var a = documet.getElementById("cookie").innerHTML=a();
+      }
+
+   </script>
+</head>
+<body background="aaa.jpg">
+   <center>
+      <div style="border-right:#ffffff 10px solid; border-top:#ffffff 10px solid;border-left:#ffffff 10px solid; border-bottom:#ffffff 10px solid;">
+         <div style="text-align: center;">
+            <h1>Cookie Clicker</h1>
+         </div>
+      </div>
+
+      <div>
+         <fieldset style="width:400px; height: 100px;"text-align:left; margin 0; padding: 3px;>
+            <legend style="margin:0px;padding: 0px;"align=center>상점</legend>
+               <div style="height : 40px; boredr : 1px;">
+                  <img src="./cuser.png" onclick="a();f4();">
+               </div>
+         </fieldset>
+      </div>
+      <div style="height:40px;">
+         <img src="./cookie.png" onclick="f2();">
+      </div>
+
+      <div style="margin:200px;">
+         <h1 id="cookie"></h1>
+      </div>
+
+   </center>
+</body>
+</html>
